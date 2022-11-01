@@ -12,5 +12,3 @@ class EmployeeData(BaseModel):
 
 class Employee(EmployeeData):
     id: int
-
-
