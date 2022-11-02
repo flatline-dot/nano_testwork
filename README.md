@@ -5,4 +5,4 @@ cd nano_testwork
 docker-compose up -d
 ````
 
-Documentation http://localhost:8080/docs
+Doc http://localhost:8080/docs
