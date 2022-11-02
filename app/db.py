@@ -18,7 +18,7 @@ employees = Table(
     Column('firstname', String(30)),
     Column('lastname', String(30)),
     Column('date_of_birth', Date),
-    Column('email', String(30),unique=True),
+    Column('email', String(30), unique=True),
     Column('position', String(30))
 )
 
