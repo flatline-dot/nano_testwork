@@ -2,7 +2,6 @@ from typing import List
 from app import schemas
 
 from fastapi import FastAPI, Depends, HTTPException
-from .db import database
 from .db import employees
 from .dependencies import db_conn
 from databases import Database

@@ -8,10 +8,8 @@ database = databases.Database(DATABASE_URL)
 
 metadata = MetaData()
 
-def create_table(db_url, metadata):
-    engine = create_engine(db_url)
-    metadata.create_all(engine)
 
+engine = create_engine(DATABASE_URL)
 
 employees = Table(
     'employees',
@@ -26,4 +24,4 @@ employees = Table(
 
 
 if __name__ == '__main__':
-    create_table(DATABASE_URL, metadata)
+    metadata.create_all(engine)
